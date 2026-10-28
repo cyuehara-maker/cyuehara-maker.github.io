@@ -2,6 +2,7 @@ table {
     text-align: center;
 }
 
-ths {
+table {
     color: blue;
+    border-color: black;
 }
