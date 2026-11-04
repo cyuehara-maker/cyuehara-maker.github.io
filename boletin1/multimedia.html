@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <section id="marcosIntegracionExterna">
+        <h1>Marcos e Integración Externa</h1>
+
+        <h2>Tarea A</h2>
+        <!--https://developers.google.com/youtube/terms/required-minimum-functionality?hl=es-419#embedded-player-api-client-identity-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EvKm8yhM7V8?si=ZDK08_w37IkYTU0z"
+            title="Vídeo tutorial de HTML5" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+
+        <h2>Tarea B</h2>
+        <embed src="media/apuntes.pdf" type="application/pdf" , width="100%" , height="500px">
+
+        <h2>Tarea C</h2>
+        <object data="https://www.wikipedia.org" type="text/html">Tu navegador no admite la visualización de este objeto
+            incrustado</object>
+    </section>
+
+    <hr>
+
+    <section id="reproductoresMultimediaNativos">
+        <h1>Reproductores Multimedia Nativos</h1>
+
+        <h2>Tarea A</h2>
+        <!--cortar-->
+        <video controls width="640" poster="media/portada.jpg">
+            <source src="media/muestra.mp4" type="video/mp4">
+            <source src="media/muestra.webm" type="video/webm">
+            "Tu navegador no admite la visualización de este video"
+        </video>
+
+        <h2>Tarea B</h2>
+        <audio controls>
+            <source src="media/pista.mp3" type="audio/mp3">
+            <source src="media/pista.ogg" type="audio/ogg">
+            "Tu navegador no admite la reproducción de este audio"
+        </audio>
+    </section>
+
+    <hr>
+
+    <section id="graficosVectorialesMapaBits">
+        <h1>Gráficos Vectoriales y Mapa de Bits</h1>
+
+        <h2>Tarea A</h2>
+        <svg width="200" height="200">
+            <rect x="0" y="0" width="100%" height="100%" fill="blue" />
+            <circle cx="50%" cy="50%" r="25%" stroke-width="2%" stroke="red" fill="yellow" />
+        </svg>
+
+        <h2>Tarea B</h2>
+        <canvas id="miLienzo" width="300" height="150">
+            "Tu navegador no soporta el elemento Canvas"
+        </canvas>
+
+        <script>
+            const canvas = document.getElementById('miLienzo');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'green';
+            ctx.fillRect(10, 10, 150, 80);
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke(); 
+        </script>
+    </section>
+
+</body>
+
+</html>
