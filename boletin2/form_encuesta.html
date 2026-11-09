@@ -12,22 +12,48 @@
         <fieldset>
             <legend>Datos Académicos</legend>
 
-            <label for="nombre">Nombre y Apellidos</label>
-            <input type="text" name="nombre" id="nombre">
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" name="nombre" id="nombre" required>
             <br><br>
 
             <label for="ciclo">Ciclo Formativo</label>
             <select name="ciclo" id="ciclo">
-                <option>DAM</option>
-                <option>DAW</option>
-                <option>ASIR</option>
+                <option value="dam" selected>DAM</option>
+                <option value="daw">DAW</option>
+                <option value="asir">ASIR</option>
             </select>
 
         </fieldset>
         <fieldset>
             <legend>Preferencias Técnicas</legend>
+
+            <p>Lenguaje principal</p>
+            <input type="radio" name="lenguaje" id="java">
+            <label for="java">Java</label><br>
+            <input type="radio" name="lenguaje" id="python">
+            <label for="python">Python</label><br>
+            <input type="radio" name="lenguaje" id="c#">
+            <label for="c#">C#</label><br>
+            <input type="radio" name="lenguaje" id="javascript">
+            <label for="javascript">JavaScript</label><br>
             
-        </fieldset>
+            <p>Entornos de trabajo habituales</p>
+            <input type="checkbox" name="entornos" id="linux">
+            <label for="linux">Linux</label><br>
+            <input type="checkbox" name="entornos" id="windows">
+            <label for="windows">Windows</label><br>
+            <input type="checkbox" name="entornos" id="macos">
+            <label for="macos">MacOS</label><br>
+            <br>
+
+            <label for="comentarios">Comentarios / Experiencia previa</label><br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="40"></textarea>;
+
+        </fieldset><br>
+        
+        <button type="reset">Restablecer</button>
+        <button type="submit">Enviar</button>
+
     </form>
 </body>
 
