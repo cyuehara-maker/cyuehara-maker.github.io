@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.endes {
+    background-color: #E8DDA8;
+}
+
+.si {
+    background-color: #D98B91;
+}
+
+.prog {
+    background-color: #82B85B;
+}
+
+.lmsgi {
+    background-color: #78A9E8;
+}
+
+.badat {
+    background-color: #D6A477;
+}
+
+.ipe1 {
+    background-color: #A9D0E5;
+}
+
+.digitalizacion {
+    background-color: #AD7894;
+}
+
+.sostenibilidad {
+    background-color: #C88770;
+}
+
+.segmento_de_ocio {
+    background-color: #B9C6D5;
+}
+
+#horario {
+    margin: 1%;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    padding: 10px;
+}

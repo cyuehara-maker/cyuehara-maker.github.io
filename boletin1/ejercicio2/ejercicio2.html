@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border="1" id="horario" style="text-align: center;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8:15</th>
+                <td rowspan="2" class="endes">ENDES</td>
+                <td rowspan="2" class="badat">BADAT</td>
+                <td class="ipe1">IPE1</td>
+                <td class="ipe1">IPE1</td>
+                <td class="lmsgi">LMSGI</td>
+            </tr>
+            <tr>
+                <th>9:15</th>
+                <td class="lmsgi">LMSGI</td>
+                <td class="prog">PROG(Ap)</td>
+                <td class="ipe1">IPE1</td>
+            </tr>
+            <tr>
+                <th>10:15</th>
+                <td class="si">SI(Ap)</td>
+                <td class="prog">PROG(Ap)</td>
+                <td class="digitalizacion">Digitalización</td>
+                <td class="badat">BADAT</td>
+                <td class="badat">BADAT</td>
+            </tr>
+            <tr>
+                <th>11:15</th>
+                <td colspan="5" class="segmento_de_ocio">Segmento de Ocio</td>
+            </tr>
+            <tr>
+                <th>11:45</th>
+                <td rowspan="2" class="prog">PROG(Ap)</td>
+                <td class="prog">PROG(Ap)</td>
+                <td class="sostenibilidad">Sostenibilidad</td>
+                <td class="endes">ENDES</td>
+                <td rowspan="3" class="prog">PROG</td>
+            </tr>
+            <tr>
+                <th>12:45</th>
+                <td rowspan="2" class="si">SI(Ap)</td>
+                <td rowspan="2" class="badat">BADAT(Ap)</td>
+                <td rowspan="2" class="si">SI</td>
+            </tr>
+            <tr>
+                <th>13:45</th>
+                <td class="lmsgi">LMSGI</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">SI</td>
+                <td>5h</td>
+                <td colspan="2">PROG</td>
+                <td>8h</td>
+            </tr>
+            <tr>
+                <td colspan="2">LMSGI</td>
+                <td>3h</td>
+                <td colspan="2">ENDES</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td colspan="2">BADAT</td>
+                <td>6h</td>
+                <td colspan="2">IPE1</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td colspan="2">Digitalización</td>
+                <td>1h</td>
+                <td colspan="2">Sostenibilidad</td>
+                <td>1h</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
