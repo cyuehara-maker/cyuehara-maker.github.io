@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5</title>
+</head>
+
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/registroweb.php" method="get">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" autofocus required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal">
+        </fieldset>
+
+        <fieldset>
+            <legend>Tiempo</legend>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+            <br><br>
+
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" name="tiempo" id="tiempo">
+            <br><br>
+
+            <label for="fechahora">Hora:</label>
+            <input type="datetime-local" name="fechahora" id="fechahora">
+            <br><br>
+
+            <label for="mes">Mes:</label>
+            <input type="month" name="mes" id="mes">
+            <br><br>
+
+            <label for="semana">Semana:</label>
+            <input type="week" name="semana" id="semana">
+        </fieldset>
+
+        <fieldset>
+            <legend>Números</legend>
+
+            <label for="número">Número:</label>
+            <input type="number" name="número" id="número" min="-10" max="10">
+            <br><br>
+            
+            <label for="teléfono">Teléfono:</label>
+            <input type="tel" name="teléfono" id="teléfono">
+        </fieldset>
+            
+        <fieldset>
+            <legend>Otros</legend>
+
+            <label for="búsqueda">Termino de búsqueda:</label>
+            <input type="search" name="búsqueda" id="búsqueda">
+            <br><br>
+            
+            <label for="color">Color favorito:</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+
+</html>
